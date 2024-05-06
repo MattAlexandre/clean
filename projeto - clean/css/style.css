@@ -1,0 +1,220 @@
+*{
+    padding: 0px ;
+    margin: 0px ;
+}
+:root{
+    --color1: black ;
+    --color2: white;
+    --color3:#034858;
+    --color4:#032E59;
+    --color5:#031359;
+    --color6:#03594D;
+    --color7:#035930;
+
+    --main-font:'verdana';
+    --text-font:'arial';
+}
+body{
+    background-image: linear-gradient(-45deg, var(--color3) , var(--color4) , var(--color5) , var(--color6) , var(--color7),var(--color3));
+    background-size: 300% 300%;
+    animation: mygradient 30s ease infinite;
+    text-align: center;
+}
+@keyframes mygradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/*=======================================================*/
+header{
+    background: var(--color1) url('../img/fundo-footer.jpeg') no-repeat center center fixed ;
+    background-size: cover;
+    padding: 250px;
+    border-radius: 0px 0px 15px 15px;
+}
+/*=======================================================================*/
+main{
+    
+    border-radius: 0px 0px 5px 5px;
+    width: 65%;
+    margin: auto;
+    padding: 15px;
+}
+main > section{
+
+    padding: 2px;
+    border-radius: 5px;
+    margin: 15px 5px;
+}
+/*==========================================================*/
+main > #section_1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > #section_1 > div{
+    flex-basis: 200;
+    flex-grow: 1;
+    background-color: rgba(255, 0, 0, 0);
+    margin: 0px 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* main > section > #box1{
+
+}
+main > section > #box2{
+    
+} */
+main > #section_1 > div > div{
+    flex-basis: 200;
+    flex-grow: 1;
+
+    margin: 0px 5px;
+}
+
+main > #section_1 > div > div > img{
+    height: 200px;
+    width: 100%;
+    border-radius: 15px 0px;
+    
+}
+main > #section_1 > div > div > h2{
+    font: normal bold 1em var(--main-font);
+    text-align: center;
+    color: var(--color2);
+}
+/*===========================================*/
+main > #section_2 {
+    display: flex;
+   
+}
+
+main #section_2 > div {
+    display: block;
+    margin: 5px;
+    background-color: rgba(255, 0, 0, 0);
+    flex-basis: 200;
+    flex-grow: 1;
+}
+main > #section_2 > #box_img1{
+    width: 60%;
+}
+main > #section_2 > #box_img2{
+    width: 40%;
+}
+
+main > #section_2 > #box_img1 > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 0px;
+}
+
+main > #section_2 > #box_img2 > h2 {
+    font: normal bold 2rem var(--main-font);
+    text-align: center;
+    color: var(--color2);
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    vertical-align: baseline;
+}
+main > #section_2 > #box_img2 > p{
+    font: normal bold  clamp(0.7em, 1em + 1vw, 1.5em) var(--main-font);
+    text-align: center;
+    color: var(--color2);
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+    
+}
+/* ================================================== */
+main > #section_3 > p{
+    font: normal bold  clamp(0.7em, 1em + 1vw, 1.5em) var(--main-font);
+    text-align: center;
+    color: var(--color2);
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+}
+#img_m_1{
+    background: var(--color1) url('../img/img-div1.png') no-repeat center center fixed ;
+    background-size: cover;
+    padding: 100px;
+    border-radius: 25px 0px;
+}
+
+#img_m_2{
+    background: var(--color1) url('../img/img-div2.png') no-repeat center center fixed ;
+    background-size: cover;
+    padding: 100px;
+    border-radius: 0px 25px ;
+}
+
+/*=========================================*/
+
+main > #section_3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+main > #section_3 > div{
+    display: block;
+    margin: 5px;
+    background-color: rgba(255, 0, 0, 0);
+    flex-basis: 200;
+    flex-grow: 1;
+}
+
+main > #section_3 > div > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 0px;
+}
+main > #section_3 > div >  p{
+    font: normal bold  clamp(0.7em, 1em + 1vw, 1.5em) var(--main-font);
+    text-align: center;
+    color: var(--color2);
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+}
+main > #section_3 > div > p > a{
+    font: normal bold  clamp(0.7em, 1em + 1vw, 1.5em) var(--main-font);
+    text-align: center;
+    color: var(--color6);
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+    background-color:var(--color2);
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+main > #section_3 > div > p > a:hover{
+    font: normal bold  clamp(0.9em, 1.2em + 1.2vw, 1.5em) var(--main-font);
+    text-align: center;
+    color: var(--color2);
+    padding: 15px;
+    background-color: var(--color6);
+    border-radius: 12px;
+}
+/*===========================================================*/
+
+ 
+/*=======================================================================*/
+footer{
+    padding: 10px;
+}
+footer > p{
+    font: normal bold  0.5rem var(--main-font);
+    text-align: center;
+    color: var(--color2);
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+}
